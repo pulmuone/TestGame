@@ -27,15 +27,14 @@ namespace TestGame
             StackGameGird.Children.Clear();
 
             Grid makegrid = new Grid();
-            //칸 사이의 고간을 없애려면 
+            //칸 사이의 공간을 없애려면 
             //makegrid.RowSpacing = 0;
             //makegrid.ColumnSpacing = 0;
             //makegrid.Padding = new Thickness(0, 0, 0, 0);
             //makegrid.Margin = new Thickness(0, 0, 0, 0);
 
             makegrid.VerticalOptions = LayoutOptions.FillAndExpand;
-
-
+            
             int nGridFinition = (stage / 3) + 2;
 
             if (nGridFinition > 5)
