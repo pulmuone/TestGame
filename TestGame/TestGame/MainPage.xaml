@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TestGame.MainPage">
+
+    <Grid RowSpacing="0" ColumnSpacing="0" Padding="0,0,0,0" Margin="0,0,0,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="8*" />
+            <RowDefinition Height="2*" />
+        </Grid.RowDefinitions>
+
+        <StackLayout x:Name="StackGameGird" Grid.Row="0" VerticalOptions="FillAndExpand" >
+        </StackLayout>
+
+        <StackLayout VerticalOptions="FillAndExpand" Grid.Row="1">
+            <Label Text="TEST" x:Name="lbl_text" VerticalOptions="Center"/>
+            <Button Text="Reset" Clicked="Button_Clicked" HorizontalOptions="FillAndExpand" />
+        </StackLayout>
+    </Grid>
+
+</ContentPage>
